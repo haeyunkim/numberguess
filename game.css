@@ -1,22 +1,44 @@
 #title {
   font-size: 3rem;
   text-align: center;
-  position: relative;
-  right: 20px;
-  bottom: 50px;
 }
 body {
   overflow-y: hidden;
   margin: 0;
   padding: 0;
+  font-family: "East Sea Dokdo", cursive;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
 .bg {
-  background: url("./img/bg.png");
-  background-size: 100%;
+  background: url("./img/guess2.png");
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -55% 50%;
+}
+.container {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main-img {
+  width: 130px;
+  height: 130px;
+}
+.guess-wrapper {
+  border: 5px solid black;
+  width: 400px;
+  height: 400px;
+}
+.guess-content {
+  text-align: center;
+  margin-top: 40px;
 }
 #change-area {
   font-size: 25px;
@@ -25,17 +47,14 @@ a {
 }
 #result-area {
   font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: 20px;
 }
-.ContentWrapper {
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .ContentWrapper > img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   z-index: -999;
 }
